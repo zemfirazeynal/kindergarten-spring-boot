@@ -25,7 +25,7 @@ public class SwaggerConfig {
     public Docket kidApi(){
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("az.kindergarten.kindergartenspringboot.controller"))
+                .apis(RequestHandlerSelectors.basePackage("az.kindergarten.kindergartenspringboot"))
                 .paths(regex("/.*"))
                 .build()
                 .apiInfo(metaData());
